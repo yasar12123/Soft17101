@@ -1,17 +1,15 @@
 numberN = int(input("input number 1: "))
 numberM = int(input("input number 2: "))
-numberNStart = numberN
-counter = 0
 
-while numberNStart > 0:
-    if numberNStart > 0 and (numberN % numberM) == 0:
-        numberNStart = numberNStart - numberM
-        counter += 1
+numberNSubtract = numberN
+numberOfSubtractions = 0
+remainder = numberN % numberM
 
-    elif (numberN % numberM) > 0:
-        print("cant divide ",numberN, " by ",numberM  )
-        break
+while numberNSubtract > 0:
+    numberNSubtract = numberNSubtract - numberM
+    numberOfSubtractions += 1
 
-print(numberN, " divided by ",numberM, " = ", counter)
-
-
+if numberNSubtract < 0:
+    print((numberOfSubtractions - 1), "remainder ", remainder)
+else:
+    print(numberOfSubtractions)
