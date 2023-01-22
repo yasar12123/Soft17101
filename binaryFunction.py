@@ -7,3 +7,5 @@ def binary(numberN):
             binaryList.insert(0, (numberNStore % 2))
             numberNStore = numberNStore // 2
     print("The binary for ", numberN, " is ", binaryList)
+
+binary(45)
