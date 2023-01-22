@@ -1,18 +1,19 @@
 numberN = int(input("input number 1: "))
 numberM = int(input("input number 2: "))
-
 numberList = [numberN, numberM]
 numberList.sort()
-lowestNumber = int(numberList[0]+1)
+counter = 1
 lcmFound = False
-while lcmFound is False:
-    for i in range(2, lowestNumber):
-        if numberN % i == 0 and numberM % i == 0 and lcmFound is False:
+
+if 1 in numberList:
+    print(numberList[-1])
+elif 0 in numberList:
+    print("LCM of zero does not exist")
+else:
+    while lcmFound is False:
+        if counter % numberN == 0 and counter % numberM == 0:
             lcmFound = True
-            print(i)
         else:
-            print("none")
+            counter += 1
 
-
-
-
+    print("Then LCM of ", numberN, " and ", numberM, " is ", counter)
