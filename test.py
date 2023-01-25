@@ -1,5 +1,6 @@
-calc = "2**4"
 
+userInput = input("input: ")
+list = []
+list.extend([1,2,3,4,5])
 
-
-print(eval(calc))
+print(userInput.strip())
