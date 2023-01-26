@@ -1,15 +1,15 @@
-#0
-    #item_location = input("is the item located outside of the UK?")
-    #item_type = input("is the item a book or document?")
-    #purchase_price = float(input("what is the purchase price?"))
-        #if item_location == "yes" and item_type == "no": print("VAT required, The total cost of the item is: " + str(purchase_price*1.2))
-        #else: print("No VAT required, The total cost of the item is: " + str(purchase_price))
+#0 vat calc
+item_location = input("is the item located outside of the UK?")
+item_type = input("is the item a book or document?")
+purchase_price = float(input("what is the purchase price?"))
+if item_location == "yes" and item_type == "no": print("VAT required, The total cost of the item is: " + str(purchase_price*1.2))
+else: print("No VAT required, The total cost of the item is: " + str(purchase_price))
 
 
 
 #1. convert hours into minutes#
-    #hours = float(input("what is the number of hours you want to convert to minutes"))
-    #print("There are " + str(hours*60) + " minutes in " + str(hours) + " hours")
+hours = float(input("what is the number of hours you want to convert to minutes"))
+print("There are " + str(hours*60) + " minutes in " + str(hours) + " hours")
 
 
 #2. cost of expenses
