@@ -1,6 +1,12 @@
 
-userInput = input("input: ")
-list = []
-list.extend([1,2,3,4,5])
 
-print(userInput.strip())
+def numberRange(x, y):
+    rangeCounter = x
+    numberRangeList = []
+    for i in range(x, y+1):
+        numberRangeList.append(rangeCounter)
+        rangeCounter += 1
+    numberRangeList.reverse()
+    print(numberRangeList)
+
+numberRange(4,10)
