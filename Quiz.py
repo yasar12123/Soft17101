@@ -14,7 +14,7 @@ while (attemptCounter < 3):
     else:
         print(incorrectAnswer)
         attemptCounter += 1
-        print("Attemnt Number: ", attemptCounter)
+        print("Attemt Number: ", attemptCounter)
 
 attemptCounter = 0
 
@@ -30,7 +30,7 @@ while (attemptCounter < 3):
     else:
         print(incorrectAnswer)
         attemptCounter += 1
-        print("Attemnt Number: ", attemptCounter)
+        print("Attemt Number: ", attemptCounter)
 
 attemptCounter = 0
 
@@ -46,6 +46,6 @@ while (attemptCounter < 3):
     else:
         print(incorrectAnswer)
         attemptCounter += 1
-        print("Attemnt Number: ", attemptCounter)
+        print("Attemt Number: ", attemptCounter)
 
 print("\nYour total score is ", totalScore)
