@@ -1,0 +1,25 @@
+Question 1
+What is the capital of the United Kingdom? 
+A.London 
+B.Paris
+C.Washington
+D.Madrid 
+correct: London 
+
+
+Question 2
+What is the most widely used currency in the European continent? 
+A.Pound
+B.Euro
+C.Dollar
+D.Rand 
+correct: Euro
+
+
+Question 3
+Who is the main actor in the Mission Impossible movies?
+A.Daniel Craig
+B.Tom Cruise
+C.Mr Bean
+D.James Bond
+correct: Tom Cruise
