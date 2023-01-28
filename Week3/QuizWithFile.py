@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 
-#This section lists all paths and files
+#This section lists paths and files
 path = r'C:\Users\yh28\PycharmProjects\Python Project'
 fileQuiz = 'quiz.txt'
 fileScores = 'quizScores.txt'
