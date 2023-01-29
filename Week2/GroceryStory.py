@@ -9,13 +9,20 @@ def discount(product):
         print(productPrice)
 
 
+
+
 productsListDict = [{'milk': '1', 'expiration_date': 'today', 'price': 1.45},
                     {'organic milk': '2', 'expiration_date': 'tomorrow', 'price': 2.15},
                     {'filtered milk - whole': '3', 'expiration_date': 'tomorrow', 'price': 1.95},
-                    {'filtered milk - skimmed': '4', 'expiration_date': 'today', 'price': 1.85}, ]
+                    {'filtered milk - skimmed': '4', 'expiration_date': 'today', 'price': 1.85},]
 
 
-productIteration = productsListDict[0]
-keys = productIteration.get('expiration_date')
 
-discount(productsListDict)
+for productsIter in range(len(productsListDict)):
+    productDictIteration = productsListDict[productsIter]
+    productKeys = list(productDictIteration.keys())
+    productExpiryDate = productDictIteration.get('expiration_date')
+    productPrice = productDictIteration.get('price')
+    print('product : {}, expiration date : {}, price : {}' .format(productKeys[0], productExpiryDate, productPrice))
+
+    #discount(productsListDict)

@@ -7,8 +7,11 @@ fileQuiz = 'quiz.txt'
 fileScores = 'quizScores.txt'
 quizFullPath = os.path.join(path, fileQuiz)
 scoresFullPath = os.path.join(path, fileScores)
-quiz = open(quizFullPath, "w")
-quizScores = open(scoresFullPath, "a")
+try:
+    quiz = open(quizFullPath, "w")
+    quizScores = open(scoresFullPath, "a")
+except:
+    raise FileNotFoundError("File not found, check if the files and directory exits")
 
 #all questions in the quiz
 numberOfQuestions = 3

@@ -13,4 +13,4 @@ def binary(numberN:int):
                 numberNStore = numberNStore // 2
     print("The binary for ", numberN, " is ", binaryList)
 
-binary(60)
+binary(50)
