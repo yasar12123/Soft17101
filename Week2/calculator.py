@@ -5,13 +5,13 @@ def addition(x, y):
     print(x, " + ", y, " = ", calc)
 
 
-#this function adds subtracts the inputs
+#this function subtracts the inputs
 def subtraction(x, y):
     calc = float(x) - float(y)
     print(x, " - ", y, " = ", calc)
 
 
-#this function multiply's the inputs
+#this function multiplys the inputs
 def multiplication(x, y):
     calc = float(x) * float(y)
     print(x, " * ", y, " = ", calc)
@@ -29,10 +29,10 @@ def exponent(x, y):
     print(x, " ^ ", y, " = ", calc)
 
 
-contCalc = False
+stopCalc = False
 
 
-while contCalc is False:
+while stopCalc is False:
     functionSelect = input('\n' "Select an operation: " +
                            '\n' "(1) Add" +
                            '\n' "(2) Subtract" +
@@ -75,7 +75,7 @@ while contCalc is False:
     nextOperation = input('\n' "Would you like to perform another operation : "
                           '\n' "Yes or No" '\n')
     if nextOperation.upper() == "YES":
-        contCalc = False
+        stopCalc = False
     else:
-        contCalc = True
+        stopCalc = True
 
