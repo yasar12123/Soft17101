@@ -1,13 +1,13 @@
-def crossReference (input, list):
-    if input in list:
-        print(True)
-    else:
-        print(False)
+class Shape:
+  def __init__(self,colour):
+    	self._colour = colour
 
-winningMoves = [(1,2,3), (4,5,6), (7,8,9),
-                (1,4,7), (2,5,8), (3,6,9),
-                (1,5,9), (3,5,7)]
 
-moves = [6,5,4]
-moves.sort()
-crossReference(moves, winningMoves)
+class Circle(Shape):
+    def __init__(self,colour,radius):
+        super().__init__(colour)
+        self._radius = radius
+
+my_circle = Circle("black",4.5)
+
+my_circle.pretty_print()
