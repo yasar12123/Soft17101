@@ -14,13 +14,13 @@ class Account:
                 '\n' "Opening Balance: " + str(self.openingBalance) +
                 '\n' "Account Type: " + self.accType)
 
-    def deposit(self, amount):
+    def deposit(self, amount:int):
         if amount <= 0:
             raise ValueError("The deposit amount should be greater than 0")
         self.openingBalance += amount
         return self.openingBalance
 
-    def withdraw(self, amount):
+    def withdraw(self, amount:int):
         if amount <= 0:
             raise ValueError("The withdrawal amount should be greater than 0")
         if (self.openingBalance - amount) < 0:
@@ -32,5 +32,5 @@ class Account:
 
 acc1 = Account(123, "jon doe", 100, "standard variable")
 
-acc1.withdraw(-40)
+acc1.withdraw(50)
 print(acc1)
