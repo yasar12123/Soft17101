@@ -48,4 +48,4 @@ order2 = Bakery("coke", 100, 2.25, "01/02/2023")
 
 #order1.invoice_test()
 
-order1.get_item()
+print(order1.__str__())
