@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module menu_functions</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">menu_functions</strong></td>
+<td class="extra"><a href="../..">index</a><br><a href="file:c%3A%5Cusers%5Cyh28%5Conedrive%20-%20nottinghamshire%20county%20council%5Cdocuments%5Cgithub%5Cassessment-brief-1%5Cmenu_functions.py">c:\users\yh28\onedrive - nottinghamshire county council\documents\github\assessment-brief-1\menu_functions.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="os.html">os</a><br>
+<a href="pickle.html">pickle</a><br>
+</td><td class="multicolumn"><a href="random.html">random</a><br>
+<a href="re.html">re</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-main_menu"><strong>main_menu</strong></a>()</dt><dd><span class="code">This&nbsp;serves&nbsp;as&nbsp;the&nbsp;main&nbsp;menu,&nbsp;it&nbsp;performs&nbsp;the&nbsp;following&nbsp;tasks<br>
+1.&nbsp;Setup&nbsp;a&nbsp;league<br>
+2.&nbsp;Manage&nbsp;existing&nbsp;league</span></dd></dl>
+ <dl><dt><a name="-manage_league"><strong>manage_league</strong></a>()</dt><dd><span class="code">This&nbsp;is&nbsp;the&nbsp;manage&nbsp;league&nbsp;menu,&nbsp;it&nbsp;allows&nbsp;you&nbsp;to&nbsp;perform&nbsp;the&nbsp;following&nbsp;tasks<br>
+1.&nbsp;View&nbsp;League&nbsp;info&nbsp;-&nbsp;takes&nbsp;you&nbsp;to&nbsp;the&nbsp;view&nbsp;league&nbsp;info&nbsp;menu<br>
+2.&nbsp;Update&nbsp;league&nbsp;-&nbsp;takes&nbsp;you&nbsp;to&nbsp;the&nbsp;update&nbsp;league&nbsp;menu<br>
+3.&nbsp;Simulate&nbsp;League&nbsp;-&nbsp;simulates&nbsp;the&nbsp;league&nbsp;scores</span></dd></dl>
+ <dl><dt><a name="-menu_setup_league"><strong>menu_setup_league</strong></a>()</dt><dd><span class="code">This&nbsp;is&nbsp;the&nbsp;setup&nbsp;league&nbsp;menu,&nbsp;it&nbsp;performs&nbsp;the&nbsp;following&nbsp;tasks<br>
+firs&nbsp;it&nbsp;asks&nbsp;which&nbsp;league&nbsp;rules&nbsp;you&nbsp;want&nbsp;to&nbsp;set&nbsp;up&nbsp;e.g.&nbsp;EPL&nbsp;rules<br>
+available&nbsp;league&nbsp;rules<br>
+1.&nbsp;EPL<br>
+&nbsp;<br>
+Then&nbsp;you&nbsp;can&nbsp;select&nbsp;one&nbsp;of&nbsp;the&nbsp;options&nbsp;below.<br>
+1.&nbsp;Use&nbsp;the&nbsp;default&nbsp;directory&nbsp;and&nbsp;file&nbsp;name&nbsp;-&nbsp;to&nbsp;setup&nbsp;the&nbsp;league<br>
+2.&nbsp;Use&nbsp;custom&nbsp;directory&nbsp;and&nbsp;file&nbsp;name&nbsp;-&nbsp;to&nbsp;setup&nbsp;the&nbsp;league</span></dd></dl>
+ <dl><dt><a name="-menu_setup_league_path"><strong>menu_setup_league_path</strong></a>(child_class_league, path_file: str)</dt><dd><span class="code">This&nbsp;function&nbsp;provides&nbsp;a&nbsp;user-friendly&nbsp;menu&nbsp;to&nbsp;setup&nbsp;the&nbsp;football&nbsp;league&nbsp;along<br>
+with&nbsp;the&nbsp;benefit&nbsp;of&nbsp;error&nbsp;handling.<br>
+...<br>
+:param&nbsp;child_class_league:&nbsp;name&nbsp;of&nbsp;the&nbsp;child&nbsp;league&nbsp;class&nbsp;e.g.&nbsp;EPL<br>
+:type&nbsp;child_class_league:&nbsp;str<br>
+:param&nbsp;path_file:&nbsp;path&nbsp;to&nbsp;the&nbsp;directory/file&nbsp;which&nbsp;contains&nbsp;the&nbsp;text&nbsp;file&nbsp;of&nbsp;teams<br>
+:type&nbsp;path_file:&nbsp;str</span></dd></dl>
+ <dl><dt><a name="-update_league"><strong>update_league</strong></a>()</dt><dd><span class="code">This&nbsp;is&nbsp;the&nbsp;update&nbsp;league&nbsp;menu,&nbsp;it&nbsp;allows&nbsp;you&nbsp;to&nbsp;perform&nbsp;the&nbsp;following&nbsp;tasks<br>
+1.&nbsp;Update&nbsp;team&nbsp;score&nbsp;-&nbsp;takes&nbsp;you&nbsp;to&nbsp;the&nbsp;update&nbsp;team&nbsp;score&nbsp;menu<br>
+2.&nbsp;Update&nbsp;manager&nbsp;-&nbsp;allows&nbsp;you&nbsp;to&nbsp;update&nbsp;a&nbsp;teams&nbsp;manager<br>
+3.&nbsp;Update&nbsp;top&nbsp;goal&nbsp;scorer&nbsp;-&nbsp;allows&nbsp;you&nbsp;to&nbsp;update&nbsp;a&nbsp;teams&nbsp;top&nbsp;goal&nbsp;scorer<br>
+4.&nbsp;Promote&nbsp;teams&nbsp;from&nbsp;league&nbsp;-&nbsp;promotes&nbsp;the&nbsp;top&nbsp;3&nbsp;teams&nbsp;from&nbsp;the&nbsp;league<br>
+5.&nbsp;Relegate&nbsp;teams&nbsp;from&nbsp;league&nbsp;-&nbsp;relegates&nbsp;the&nbsp;bottom&nbsp;3&nbsp;teams&nbsp;from&nbsp;the&nbsp;league</span></dd></dl>
+ <dl><dt><a name="-update_score"><strong>update_score</strong></a>()</dt><dd><span class="code">This&nbsp;is&nbsp;the&nbsp;update&nbsp;score&nbsp;menu,&nbsp;it&nbsp;allows&nbsp;you&nbsp;to&nbsp;perform&nbsp;the&nbsp;following&nbsp;tasks<br>
+1.&nbsp;Update&nbsp;wins<br>
+2.&nbsp;Update&nbsp;losses<br>
+3.&nbsp;Update&nbsp;draws<br>
+4.&nbsp;Update&nbsp;goals&nbsp;scored<br>
+5.&nbsp;Update&nbsp;goals&nbsp;conceded</span></dd></dl>
+ <dl><dt><a name="-view_league"><strong>view_league</strong></a>()</dt><dd><span class="code">This&nbsp;is&nbsp;the&nbsp;view&nbsp;league&nbsp;info&nbsp;menu,&nbsp;it&nbsp;allows&nbsp;you&nbsp;to&nbsp;perform&nbsp;the&nbsp;following&nbsp;tasks<br>
+1.&nbsp;View&nbsp;score&nbsp;board&nbsp;-&nbsp;view&nbsp;the&nbsp;leagues&nbsp;score&nbsp;board&nbsp;with&nbsp;all&nbsp;teams&nbsp;and&nbsp;stats<br>
+2.&nbsp;View&nbsp;team&nbsp;info&nbsp;-&nbsp;view&nbsp;a&nbsp;teams&nbsp;information</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>default_path_file</strong> = 'epl.txt'<br>
+<strong>list_of_objects</strong> = []<br>
+<strong>save_location</strong> = 'objList.pkl'</td></tr></table>
+</body></html>

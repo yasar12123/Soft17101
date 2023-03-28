@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module class_League</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">class_League</strong></td>
+<td class="extra"><a href="../..">index</a><br><a href="file:c%3A%5Cusers%5Cyh28%5Conedrive%20-%20nottinghamshire%20county%20council%5Cdocuments%5Cgithub%5Cassessment-brief-1%5Cclass_league.py">c:\users\yh28\onedrive - nottinghamshire county council\documents\github\assessment-brief-1\class_league.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="class_League.html#League">League</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="League">class <strong>League</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#League">League</a>(league:&nbsp;str,&nbsp;team:&nbsp;str,&nbsp;stadium:&nbsp;str,&nbsp;location:&nbsp;str)<br>
+&nbsp;<br>
+A&nbsp;class&nbsp;to&nbsp;store&nbsp;football&nbsp;league&nbsp;statistics<br>
+-------------------------------------------<br>
+&nbsp;<br>
+Attributes<br>
+----------<br>
+_league&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;league<br>
+_team&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;team<br>
+_stadium&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;home&nbsp;stadium&nbsp;of&nbsp;the&nbsp;team<br>
+_location&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;location&nbsp;where&nbsp;the&nbsp;team&nbsp;is&nbsp;based<br>
+&nbsp;<br>
+Methods<br>
+-------<br>
+goals_scored:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns&nbsp;the&nbsp;number&nbsp;of&nbsp;goals&nbsp;scored<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sets&nbsp;the&nbsp;number&nbsp;of&nbsp;goals&nbsp;scored<br>
+goals_conceded:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns&nbsp;the&nbsp;number&nbsp;of&nbsp;goals&nbsp;conceded<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sets&nbsp;the&nbsp;number&nbsp;of&nbsp;goals&nbsp;conceded<br>
+wins:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns&nbsp;the&nbsp;number&nbsp;of&nbsp;wins<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sets&nbsp;the&nbsp;number&nbsp;of&nbsp;wins<br>
+losses:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns&nbsp;the&nbsp;number&nbsp;of&nbsp;losses<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sets&nbsp;the&nbsp;number&nbsp;of&nbsp;losses<br>
+draws:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns&nbsp;the&nbsp;number&nbsp;of&nbsp;draws<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sets&nbsp;the&nbsp;number&nbsp;of&nbsp;draws<br>
+top_goal_scorer:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns&nbsp;the&nbsp;teams&nbsp;top&nbsp;goal&nbsp;scorer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sets&nbsp;the&nbsp;teams&nbsp;top&nbsp;goal&nbsp;scorer<br>
+manager:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns&nbsp;the&nbsp;teams&nbsp;manager<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sets&nbsp;the&nbsp;teams&nbsp;manager<br>
+goal_difference:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns&nbsp;goal&nbsp;difference&nbsp;(goals&nbsp;scored&nbsp;-&nbsp;goals&nbsp;conceded)<br>
+points:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns&nbsp;the&nbsp;number&nbsp;of&nbsp;points&nbsp;(default&nbsp;0)<br>
+team:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;returns&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;team<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="League-__init__"><strong>__init__</strong></a>(self, league: str, team: str, stadium: str, location: str)</dt><dd><span class="code">Constructor&nbsp;method&nbsp;for&nbsp;the&nbsp;class:&nbsp;<a href="#League">League</a><br>
+...<br>
+:param&nbsp;league&nbsp;:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;league<br>
+:type&nbsp;league:&nbsp;str<br>
+:param&nbsp;team&nbsp;:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;team<br>
+:type&nbsp;team:&nbsp;str<br>
+:param&nbsp;stadium&nbsp;:&nbsp;The&nbsp;home&nbsp;stadium&nbsp;of&nbsp;the&nbsp;team<br>
+:type&nbsp;stadium:&nbsp;str<br>
+:param&nbsp;location&nbsp;:&nbsp;The&nbsp;location&nbsp;where&nbsp;the&nbsp;team&nbsp;is&nbsp;based<br>
+:type&nbsp;location:&nbsp;str</span></dd></dl>
+
+<dl><dt><a name="League-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Returns&nbsp;the&nbsp;stats&nbsp;and&nbsp;info&nbsp;of&nbsp;a&nbsp;team.<br>
+...<br>
+:return:&nbsp;The&nbsp;league,&nbsp;team&nbsp;name,&nbsp;stadium,&nbsp;location,&nbsp;manager,&nbsp;top&nbsp;goal&nbsp;scorer,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wins,&nbsp;draws,&nbsp;losses,&nbsp;goals&nbsp;scored,&nbsp;goals&nbsp;conceded,&nbsp;goal&nbsp;difference&nbsp;and&nbsp;points<br>
+:rtype:&nbsp;str</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>goal_difference</strong></dt>
+<dd><span class="code">Returns&nbsp;the&nbsp;goal&nbsp;difference.<br>
+The&nbsp;number&nbsp;of&nbsp;goals&nbsp;scored&nbsp;minus&nbsp;the&nbsp;number&nbsp;of&nbsp;goals&nbsp;conceded<br>
+...<br>
+:return:&nbsp;returns&nbsp;the&nbsp;goal&nbsp;difference&nbsp;(goals&nbsp;scored&nbsp;-&nbsp;goals&nbsp;conceded)<br>
+:rtype:&nbsp;int</span></dd>
+</dl>
+<dl><dt><strong>team</strong></dt>
+<dd><span class="code">returns&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;team<br>
+...<br>
+:return:&nbsp;returns&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;team<br>
+:rtype:&nbsp;str</span></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>draws</strong></dt>
+<dd><span class="code">Get&nbsp;or&nbsp;set&nbsp;the&nbsp;number&nbsp;of&nbsp;matches&nbsp;drawn<br>
+...<br>
+:raises&nbsp;ValueError:&nbsp;The&nbsp;new&nbsp;value&nbsp;needs&nbsp;to&nbsp;be&nbsp;an&nbsp;integer&nbsp;or&nbsp;a&nbsp;positive&nbsp;number<br>
+...<br>
+:return:&nbsp;returns&nbsp;the&nbsp;number&nbsp;of&nbsp;matches&nbsp;drawn<br>
+:rtype:&nbsp;int</span></dd>
+</dl>
+<dl><dt><strong>goals_conceded</strong></dt>
+<dd><span class="code">Get&nbsp;or&nbsp;set&nbsp;the&nbsp;number&nbsp;of&nbsp;goals&nbsp;conceded<br>
+...<br>
+:raises&nbsp;ValueError:&nbsp;The&nbsp;new&nbsp;value&nbsp;needs&nbsp;to&nbsp;be&nbsp;an&nbsp;integer&nbsp;or&nbsp;a&nbsp;positive&nbsp;number<br>
+...<br>
+:return:&nbsp;returns&nbsp;the&nbsp;number&nbsp;of&nbsp;goals&nbsp;conceded<br>
+:rtype:&nbsp;int</span></dd>
+</dl>
+<dl><dt><strong>goals_scored</strong></dt>
+<dd><span class="code">Get&nbsp;or&nbsp;set&nbsp;the&nbsp;number&nbsp;of&nbsp;goals&nbsp;scored<br>
+...<br>
+:raises&nbsp;ValueError:&nbsp;The&nbsp;new&nbsp;value&nbsp;needs&nbsp;to&nbsp;be&nbsp;an&nbsp;integer&nbsp;or&nbsp;a&nbsp;positive&nbsp;number<br>
+...<br>
+:return:&nbsp;returns&nbsp;the&nbsp;number&nbsp;of&nbsp;goals&nbsp;scored<br>
+:rtype:&nbsp;int</span></dd>
+</dl>
+<dl><dt><strong>losses</strong></dt>
+<dd><span class="code">Get&nbsp;or&nbsp;set&nbsp;the&nbsp;number&nbsp;of&nbsp;matches&nbsp;lost<br>
+...<br>
+:raises&nbsp;ValueError:&nbsp;The&nbsp;new&nbsp;value&nbsp;needs&nbsp;to&nbsp;be&nbsp;an&nbsp;integer&nbsp;or&nbsp;a&nbsp;positive&nbsp;number<br>
+...<br>
+:return:&nbsp;returns&nbsp;the&nbsp;number&nbsp;of&nbsp;matches&nbsp;lost<br>
+:rtype:&nbsp;int</span></dd>
+</dl>
+<dl><dt><strong>manager</strong></dt>
+<dd><span class="code">Get&nbsp;or&nbsp;set&nbsp;the&nbsp;teams&nbsp;manager<br>
+...<br>
+:raises&nbsp;ValueError:&nbsp;The&nbsp;new&nbsp;value&nbsp;needs&nbsp;to&nbsp;be&nbsp;a&nbsp;string<br>
+...<br>
+:return:&nbsp;returns&nbsp;teams&nbsp;manager<br>
+:rtype:&nbsp;str</span></dd>
+</dl>
+<dl><dt><strong>top_goal_scorer</strong></dt>
+<dd><span class="code">Get&nbsp;or&nbsp;set&nbsp;the&nbsp;teams&nbsp;top&nbsp;goal-scorer<br>
+...<br>
+:raises&nbsp;ValueError:&nbsp;The&nbsp;new&nbsp;value&nbsp;needs&nbsp;to&nbsp;be&nbsp;a&nbsp;string<br>
+...<br>
+:return:&nbsp;returns&nbsp;teams&nbsp;top&nbsp;goal-scorer<br>
+:rtype:&nbsp;str</span></dd>
+</dl>
+<dl><dt><strong>wins</strong></dt>
+<dd><span class="code">Get&nbsp;or&nbsp;set&nbsp;the&nbsp;number&nbsp;of&nbsp;matches&nbsp;won<br>
+...<br>
+:raises&nbsp;ValueError:&nbsp;The&nbsp;new&nbsp;value&nbsp;needs&nbsp;to&nbsp;be&nbsp;an&nbsp;integer&nbsp;or&nbsp;a&nbsp;positive&nbsp;number<br>
+...<br>
+:return:&nbsp;returns&nbsp;the&nbsp;number&nbsp;of&nbsp;matches&nbsp;won<br>
+:rtype:&nbsp;int</span></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>initiated</strong> = False</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

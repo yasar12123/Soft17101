@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module league_functions</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">league_functions</strong></td>
+<td class="extra"><a href="../..">index</a><br><a href="file:c%3A%5Cusers%5Cyh28%5Conedrive%20-%20nottinghamshire%20county%20council%5Cdocuments%5Cgithub%5Cassessment-brief-1%5Cleague_functions.py">c:\users\yh28\onedrive - nottinghamshire county council\documents\github\assessment-brief-1\league_functions.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="os.html">os</a><br>
+<a href="pickle.html">pickle</a><br>
+</td><td class="multicolumn"><a href="random.html">random</a><br>
+<a href="re.html">re</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-check_file_format"><strong>check_file_format</strong></a>(path_file_name: str)</dt><dd><span class="code">This&nbsp;functions&nbsp;checks&nbsp;the&nbsp;format&nbsp;of&nbsp;each&nbsp;line<br>
+if&nbsp;a&nbsp;line&nbsp;from&nbsp;the&nbsp;txt&nbsp;file&nbsp;is&nbsp;not&nbsp;in&nbsp;the&nbsp;correct&nbsp;format&nbsp;"team:&nbsp;stadium&nbsp;-&nbsp;location"<br>
+then&nbsp;an&nbsp;error&nbsp;is&nbsp;raised<br>
+...<br>
+:param&nbsp;path_file_name:&nbsp;pathile&nbsp;name<br>
+:type&nbsp;path_file_name:&nbsp;str<br>
+...<br>
+:raises&nbsp;ValueError:&nbsp;Incorrect&nbsp;format<br>
+...</span></dd></dl>
+ <dl><dt><a name="-find_team_from_object_list"><strong>find_team_from_object_list</strong></a>(team_name: str, object_list)</dt><dd><span class="code">This&nbsp;function&nbsp;cross-checks&nbsp;if&nbsp;the&nbsp;input&nbsp;team&nbsp;name&nbsp;is&nbsp;in&nbsp;a&nbsp;list&nbsp;of&nbsp;objects<br>
+...<br>
+:param&nbsp;team_name:&nbsp;team&nbsp;name&nbsp;to&nbsp;check<br>
+:type&nbsp;team_name:&nbsp;str<br>
+:param&nbsp;object_list:&nbsp;a&nbsp;list&nbsp;of&nbsp;objects&nbsp;from&nbsp;the&nbsp;class:League<br>
+:type&nbsp;object_list:&nbsp;list<br>
+...<br>
+:return:&nbsp;returns&nbsp;the&nbsp;teams&nbsp;info&nbsp;if&nbsp;they&nbsp;exist&nbsp;in&nbsp;the&nbsp;list&nbsp;otherwise&nbsp;prints&nbsp;team&nbsp;is&nbsp;not&nbsp;in&nbsp;the&nbsp;league<br>
+:rtype:&nbsp;print</span></dd></dl>
+ <dl><dt><a name="-initialise_child_league"><strong>initialise_child_league</strong></a>(league_name: str, file_path: str, class_league: str)</dt><dd><span class="code">This&nbsp;function&nbsp;is&nbsp;used&nbsp;to&nbsp;set&nbsp;up&nbsp;a&nbsp;football&nbsp;league&nbsp;for&nbsp;the&nbsp;class&nbsp;specified<br>
+It&nbsp;takes&nbsp;the&nbsp;list&nbsp;generated&nbsp;from&nbsp;the&nbsp;function&nbsp;txt_line_to_lists&nbsp;and&nbsp;initialises&nbsp;them<br>
+through&nbsp;the&nbsp;class,&nbsp;each&nbsp;class&nbsp;object&nbsp;is&nbsp;then&nbsp;placed&nbsp;into&nbsp;a&nbsp;list.<br>
+...<br>
+:param&nbsp;league_name:&nbsp;name&nbsp;of&nbsp;the&nbsp;football&nbsp;league&nbsp;e.g.&nbsp;EPL<br>
+:type&nbsp;league_name:&nbsp;str<br>
+:param&nbsp;file_path:&nbsp;pathile&nbsp;name<br>
+:type&nbsp;file_path:&nbsp;str<br>
+:param&nbsp;class_league:&nbsp;name&nbsp;of&nbsp;the&nbsp;class&nbsp;to&nbsp;initialise&nbsp;objects&nbsp;in<br>
+:type&nbsp;class_league:&nbsp;str<br>
+...<br>
+:raises&nbsp;FileNotFoundError:&nbsp;the&nbsp;provided&nbsp;pathile&nbsp;can&nbsp;not&nbsp;be&nbsp;found<br>
+...<br>
+:return:&nbsp;returns&nbsp;a&nbsp;list&nbsp;of&nbsp;objects&nbsp;for&nbsp;the&nbsp;class<br>
+:rtype:&nbsp;list</span></dd></dl>
+ <dl><dt><a name="-input_not_empty"><strong>input_not_empty</strong></a>(question)</dt><dd><span class="code">This&nbsp;function&nbsp;keeps&nbsp;prompting&nbsp;for&nbsp;a&nbsp;valid&nbsp;input&nbsp;to&nbsp;the&nbsp;question&nbsp;(the&nbsp;input&nbsp;is&nbsp;not&nbsp;blank/empty)<br>
+...<br>
+:param&nbsp;question:&nbsp;the&nbsp;question&nbsp;which&nbsp;will&nbsp;be&nbsp;asked<br>
+:type&nbsp;question:&nbsp;str<br>
+...<br>
+:return:&nbsp;input&nbsp;answer<br>
+:rtype:&nbsp;any</span></dd></dl>
+ <dl><dt><a name="-league_score_board"><strong>league_score_board</strong></a>(object_list: list)</dt><dd><span class="code">This&nbsp;function&nbsp;takes&nbsp;a&nbsp;list&nbsp;of&nbsp;objects&nbsp;which&nbsp;have&nbsp;been&nbsp;initialised&nbsp;through&nbsp;the&nbsp;class:&nbsp;League<br>
+and&nbsp;converts&nbsp;it&nbsp;to&nbsp;a&nbsp;league&nbsp;score&nbsp;board.&nbsp;The&nbsp;teams&nbsp;are&nbsp;then&nbsp;ordered<br>
+by&nbsp;points,&nbsp;goal&nbsp;difference&nbsp;and&nbsp;goals&nbsp;scored&nbsp;in&nbsp;a&nbsp;descending&nbsp;manner<br>
+...<br>
+:param&nbsp;object_list:&nbsp;list&nbsp;of&nbsp;objects<br>
+:type&nbsp;object_list:&nbsp;list<br>
+...<br>
+:return:&nbsp;returns&nbsp;a&nbsp;league&nbsp;table&nbsp;of&nbsp;teams&nbsp;ordered&nbsp;by&nbsp;points,&nbsp;goal&nbsp;difference&nbsp;and&nbsp;goals&nbsp;scored&nbsp;in&nbsp;a&nbsp;descending&nbsp;manner<br>
+:rtype:&nbsp;dataframe</span></dd></dl>
+ <dl><dt><a name="-league_simulator"><strong>league_simulator</strong></a>(object_list)</dt><dd><span class="code">This&nbsp;function&nbsp;simulates&nbsp;match&nbsp;scores&nbsp;by&nbsp;using&nbsp;random&nbsp;to&nbsp;determine&nbsp;if&nbsp;the&nbsp;match&nbsp;has&nbsp;been&nbsp;won,&nbsp;lost&nbsp;or&nbsp;drawn.<br>
+Each&nbsp;team&nbsp;plays&nbsp;each&nbsp;other&nbsp;team&nbsp;twice.&nbsp;e.g.&nbsp;20&nbsp;teams&nbsp;in&nbsp;a&nbsp;league,&nbsp;each&nbsp;team&nbsp;plays&nbsp;38&nbsp;matches.<br>
+The&nbsp;class:&nbsp;League&nbsp;is&nbsp;then&nbsp;updated&nbsp;with&nbsp;the&nbsp;results.<br>
+...<br>
+:param&nbsp;object_list:&nbsp;list&nbsp;of&nbsp;objects<br>
+:type&nbsp;object_list:&nbsp;list</span></dd></dl>
+ <dl><dt><a name="-load_objects"><strong>load_objects</strong></a>(file: str)</dt><dd><span class="code">This&nbsp;function&nbsp;is&nbsp;used&nbsp;to&nbsp;load&nbsp;a&nbsp;list&nbsp;of&nbsp;objects&nbsp;from&nbsp;a&nbsp;.pkl&nbsp;file<br>
+...<br>
+:param&nbsp;file:&nbsp;pathile&nbsp;name&nbsp;to&nbsp;load&nbsp;from<br>
+:type&nbsp;file:&nbsp;str<br>
+...<br>
+:raises&nbsp;FileNotFoundError:&nbsp;the&nbsp;provided&nbsp;pathile&nbsp;can&nbsp;not&nbsp;be&nbsp;found<br>
+...<br>
+:return:&nbsp;returns&nbsp;a&nbsp;list&nbsp;of&nbsp;objects<br>
+:rtype:&nbsp;list</span></dd></dl>
+ <dl><dt><a name="-option_in_dict"><strong>option_in_dict</strong></a>(option, dictionary: dict)</dt><dd><span class="code">This&nbsp;function&nbsp;cross-checks&nbsp;if&nbsp;the&nbsp;input&nbsp;option&nbsp;is&nbsp;a&nbsp;key&nbsp;in&nbsp;the&nbsp;dictionary<br>
+...<br>
+:param&nbsp;option:&nbsp;input&nbsp;to&nbsp;check&nbsp;against&nbsp;dictionary<br>
+:type&nbsp;option:&nbsp;[str,&nbsp;int,&nbsp;float]<br>
+:param&nbsp;dictionary:&nbsp;the&nbsp;dictionary&nbsp;to&nbsp;cross-check&nbsp;with&nbsp;the&nbsp;input<br>
+:type&nbsp;dictionary:&nbsp;dict<br>
+...<br>
+:return:&nbsp;returns&nbsp;true&nbsp;if&nbsp;the&nbsp;input&nbsp;option&nbsp;is&nbsp;a&nbsp;key&nbsp;in&nbsp;the&nbsp;dictionary&nbsp;otherwise&nbsp;false<br>
+:rtype:&nbsp;bool</span></dd></dl>
+ <dl><dt><a name="-print_menu_options"><strong>print_menu_options</strong></a>(menu_option: dict)</dt><dd><span class="code">This&nbsp;function&nbsp;prints&nbsp;a&nbsp;dictionary<br>
+...<br>
+:param&nbsp;menu_option:&nbsp;dictionary<br>
+:type&nbsp;menu_option:&nbsp;dict<br>
+...<br>
+:return:&nbsp;prints&nbsp;the&nbsp;dictionary<br>
+:rtype:&nbsp;print</span></dd></dl>
+ <dl><dt><a name="-promote_team"><strong>promote_team</strong></a>(object_list)</dt><dd><span class="code">This&nbsp;function&nbsp;promotes&nbsp;the&nbsp;top&nbsp;team&nbsp;in&nbsp;the&nbsp;league&nbsp;(removes&nbsp;them&nbsp;from&nbsp;the&nbsp;League).<br>
+The&nbsp;top&nbsp;team&nbsp;is&nbsp;the&nbsp;one&nbsp;with&nbsp;the&nbsp;most&nbsp;number&nbsp;of&nbsp;points,&nbsp;goal&nbsp;difference&nbsp;and&nbsp;then&nbsp;goals&nbsp;conceded<br>
+...<br>
+:param&nbsp;object_list:&nbsp;list&nbsp;of&nbsp;objects<br>
+:type&nbsp;object_list:&nbsp;list<br>
+...<br>
+:return:&nbsp;returns&nbsp;the&nbsp;top&nbsp;team&nbsp;in&nbsp;the&nbsp;league&nbsp;with&nbsp;the&nbsp;most&nbsp;number&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;points,&nbsp;goal&nbsp;difference&nbsp;and&nbsp;then&nbsp;goals&nbsp;conceded<br>
+:rtype:&nbsp;str</span></dd></dl>
+ <dl><dt><a name="-relegate_team"><strong>relegate_team</strong></a>(object_list)</dt><dd><span class="code">This&nbsp;function&nbsp;relegates&nbsp;the&nbsp;bottom&nbsp;team&nbsp;in&nbsp;the&nbsp;league&nbsp;(removes&nbsp;them&nbsp;from&nbsp;the&nbsp;League)<br>
+The&nbsp;bottom&nbsp;team&nbsp;is&nbsp;the&nbsp;one&nbsp;with&nbsp;the&nbsp;least&nbsp;number&nbsp;of&nbsp;points,&nbsp;goal&nbsp;difference&nbsp;and&nbsp;then&nbsp;goals&nbsp;conceded<br>
+...<br>
+:param&nbsp;object_list:&nbsp;list&nbsp;of&nbsp;objects<br>
+:type&nbsp;object_list:&nbsp;list<br>
+...<br>
+:return:&nbsp;returns&nbsp;the&nbsp;bottom&nbsp;team&nbsp;in&nbsp;the&nbsp;league&nbsp;with&nbsp;the&nbsp;least&nbsp;number&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;points,&nbsp;goal&nbsp;difference&nbsp;and&nbsp;then&nbsp;goals&nbsp;conceded<br>
+:rtype:&nbsp;str</span></dd></dl>
+ <dl><dt><a name="-return_back"><strong>return_back</strong></a>(menu_name: str)</dt><dd><span class="code">This&nbsp;function&nbsp;is&nbsp;used&nbsp;to&nbsp;prompt&nbsp;the&nbsp;user&nbsp;to&nbsp;return&nbsp;back<br>
+...<br>
+:param&nbsp;menu_name:&nbsp;name&nbsp;of&nbsp;the&nbsp;menu&nbsp;which&nbsp;is&nbsp;being&nbsp;returned&nbsp;to<br>
+:type&nbsp;menu_name:&nbsp;str<br>
+...<br>
+:return:&nbsp;prompts&nbsp;the&nbsp;user&nbsp;to&nbsp;return&nbsp;back&nbsp;to&nbsp;a&nbsp;menu<br>
+:rtype:&nbsp;any</span></dd></dl>
+ <dl><dt><a name="-save_objects"><strong>save_objects</strong></a>(object_list: list, file: str)</dt><dd><span class="code">This&nbsp;function&nbsp;is&nbsp;used&nbsp;to&nbsp;save&nbsp;an&nbsp;object&nbsp;list&nbsp;to&nbsp;a&nbsp;.pkl&nbsp;file.<br>
+...<br>
+:param&nbsp;object_list:&nbsp;a&nbsp;list&nbsp;of&nbsp;objects<br>
+:type&nbsp;object_list:&nbsp;list<br>
+:param&nbsp;file:&nbsp;pathile&nbsp;name&nbsp;to&nbsp;save&nbsp;into<br>
+:type&nbsp;file:&nbsp;str</span></dd></dl>
+ <dl><dt><a name="-str_to_class"><strong>str_to_class</strong></a>(name_of_class)</dt><dd><span class="code">This&nbsp;function&nbsp;converts&nbsp;a&nbsp;string&nbsp;and&nbsp;returns&nbsp;the&nbsp;class&nbsp;module&nbsp;if&nbsp;it&nbsp;is&nbsp;found.<br>
+if&nbsp;not&nbsp;then&nbsp;a&nbsp;ModuleNotFoundError&nbsp;is&nbsp;raised.<br>
+...<br>
+:param&nbsp;name_of_class:&nbsp;name&nbsp;of&nbsp;class&nbsp;to&nbsp;parse<br>
+:type&nbsp;name_of_class:&nbsp;str<br>
+...<br>
+:raises&nbsp;ModuleNotFoundError:&nbsp;if&nbsp;the&nbsp;class&nbsp;module&nbsp;can&nbsp;not&nbsp;be&nbsp;found<br>
+...<br>
+:return:&nbsp;returns&nbsp;the&nbsp;class&nbsp;module<br>
+:rtype:&nbsp;class</span></dd></dl>
+ <dl><dt><a name="-team_object_position"><strong>team_object_position</strong></a>(team_name: str, object_list: list)</dt><dd><span class="code">This&nbsp;function&nbsp;returns&nbsp;which&nbsp;index&nbsp;the&nbsp;specified&nbsp;team&nbsp;in&nbsp;located&nbsp;in&nbsp;a&nbsp;list<br>
+...<br>
+:param&nbsp;team_name:&nbsp;team&nbsp;name&nbsp;to&nbsp;check<br>
+:type&nbsp;team_name:&nbsp;str<br>
+:param&nbsp;object_list:&nbsp;a&nbsp;list&nbsp;of&nbsp;objects&nbsp;from&nbsp;the&nbsp;class:League<br>
+:type&nbsp;object_list:&nbsp;list<br>
+...<br>
+:raises&nbsp;ValueError:&nbsp;team&nbsp;is&nbsp;not&nbsp;in&nbsp;the&nbsp;league<br>
+...<br>
+:return:&nbsp;returns&nbsp;the&nbsp;teams&nbsp;index&nbsp;position&nbsp;in&nbsp;the&nbsp;list&nbsp;if&nbsp;they&nbsp;exist&nbsp;otherwise&nbsp;raises&nbsp;a&nbsp;exception<br>
+:rtype:&nbsp;int</span></dd></dl>
+ <dl><dt><a name="-txt_line_to_lists"><strong>txt_line_to_lists</strong></a>(path_file_name: str, delimiters)</dt><dd><span class="code">This&nbsp;functions&nbsp;takes&nbsp;a&nbsp;txt&nbsp;file&nbsp;and&nbsp;turns&nbsp;each&nbsp;line&nbsp;into&nbsp;a&nbsp;list<br>
+each&nbsp;line&nbsp;is&nbsp;then&nbsp;split&nbsp;into&nbsp;elements&nbsp;by&nbsp;the&nbsp;delimiters&nbsp;provided.<br>
+...<br>
+:param&nbsp;path_file_name:&nbsp;pathile&nbsp;name<br>
+:type&nbsp;path_file_name:&nbsp;str<br>
+:param&nbsp;delimiters:&nbsp;delimiters&nbsp;can&nbsp;be&nbsp;put&nbsp;into&nbsp;a&nbsp;list&nbsp;or&nbsp;tuples<br>
+:type&nbsp;delimiters:&nbsp;str<br>
+...<br>
+:raises&nbsp;ValueError:&nbsp;The&nbsp;provided&nbsp;delimiters&nbsp;need&nbsp;to&nbsp;be&nbsp;in&nbsp;string&nbsp;format<br>
+...<br>
+:return:&nbsp;returns&nbsp;a&nbsp;list&nbsp;with&nbsp;each&nbsp;line&nbsp;in&nbsp;a&nbsp;list&nbsp;containing&nbsp;elements&nbsp;split&nbsp;by&nbsp;the&nbsp;delimiters<br>
+:rtype:&nbsp;list</span></dd></dl>
+</td></tr></table>
+</body></html>
